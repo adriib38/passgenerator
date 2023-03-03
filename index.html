@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+    <body>
+        <div id="container">
+            <h1>Password Generator</h1>
+            <pre id="password"></pre>
+            <div id="params">
+                <label>Lenght: <span id="num_lenght">1</span></label>
+                <input type="range" id="param_lenght" min="1" max="40" value="8">
+                <label>Numbers?:</label>
+                <input type="checkbox" id="param_numbers" checked>
+                <label>Letters?:</label>
+                <input type="checkbox" id="param_letters" checked>
+                <label>Special chars?:</label>
+                <input type="checkbox" id="param_specialsChars" checked>
+            </div>
+            <input type="button" id="btn-generate" value="Generate">
+
+            <ul id="pass-history">
+
+            </ul>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

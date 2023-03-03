@@ -1,0 +1,84 @@
+body {
+    background: #161414;
+    font-family: monospace;
+}
+
+h1 {
+    color: #4AF626;
+    font-family: monospace;
+    font-size: 4em;
+    text-shadow: 0px 0px 10px #4AF626;
+}
+
+#container { text-align:center; }
+
+#password {
+    font-size: 2em;
+
+    width: fit-content;
+
+    font-family: monospace;
+    background-color: aliceblue;
+    margin: auto;
+    text-align: left;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#password:hover {
+    cursor: pointer;
+}
+
+#password::selection {
+    color:#49f62693;
+    background:#49f6264f;
+}
+
+#params {
+    background: #a7a7a7;
+    width: 50%;
+    margin: 30px auto;
+    padding: 20px; 
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+#params label { font-size: 20px; }
+
+#params input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+#btn-generate {
+    font-family: monospace;
+    font-size: 2em;
+    color: #4AF626;
+    border: 0;
+    padding: 20px;
+    background: #3f3c3c;
+    border-radius: 3px;
+}
+
+#btn-generate:hover {
+    background: #3f3c3c93;
+    cursor: pointer;
+}
+
+#pass-history {
+    color: white;
+    font-family: monospace;
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#pass-history li {
+    margin: 0px auto;
+    padding: 10px;
+    background: #3f3c3c;
+    border-radius: 3px;
+    font-size: 1.3em;
+    margin-top: 3px;
+}
